@@ -79,11 +79,20 @@ fn main() {
 
 
 
+let referencia = colgante();
+
+println!("referencia: {}", referencia);
 
 
    
 }
 
+
+
+fn colgante() -> String{
+    let s  = String::from("hola referecia ");
+    s
+}
 //en la funciones en rust puede retornar mas de un valor.
 // fn toma_propiedad(cadena: String)->  (String , usize){
 //     let aux:usize = cadena.len();
