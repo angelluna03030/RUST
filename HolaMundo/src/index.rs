@@ -1,4 +1,4 @@
 fn index(){
 
-     let red = "red";
+     red = "red";
 }
