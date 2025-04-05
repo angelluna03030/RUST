@@ -4,11 +4,47 @@
 //     email: String,
 //     activo: bool,
 // }
-struct  Color (i32, i32, i32);
-struct Coordenada(i32, i32, i32);
-fn main() {
+// struct  Color (i32, i32, i32);
+// struct Coordenada(i32, i32, i32);
+struct  Rectangulo{
+    ancho: i32,
+    alto: i32,
+}
+//esto que hace referencia a que afectar toda la estrctura
+// en este ejemplo se le esta agregando un metodo a la estructura
+impl Rectangulo {
+    fn area(&self) -> i32 {
+        self.ancho * self.alto
+    }
+    // fn puede_contener(&self, otro: &Rectangulo) -> bool {
+    //     self.ancho >= otro.ancho && self.alto >= otro.alto
+    // }
+    fn cuadrado(lado: i32) -> Rectangulo {
+        Rectangulo {
+            ancho: lado,
+            alto:lado,
+        }
+    }
+}
 
- 
+
+fn main() {
+   let cuadrado1 = Rectangulo::cuadrado(10);
+   
+//  let rectangulo1 = Rectangulo {
+//      ancho: 10,
+//      alto: 20,
+//     };
+//     let rectangulo2 = Rectangulo {
+//         ancho: 5,
+//         alto: 15,
+//     };
+//     let rectangulo3 = Rectangulo {
+//         ancho: 20,
+//         alto: 50,
+//     };
+  
+//     println!("puede contener: {}", rectangulo3.puede_contener(&rectangulo1));
     //es muy importa que si se define una estrucutra mutable todas susu propiedades
     //se vuelven mutables
 //     let mut usuario1 = Usuario {
@@ -41,8 +77,8 @@ fn main() {
 
 
     //Estructura de tuplas
-    let negro = Color(0,0,0);
-    let cordenada = Coordenada(0,0,9);
+    // let negro = Color(0,0,0);
+    // let cordenada = Coordenada(0,0,9);
 
 //Estructura de tipo unidad 
 
@@ -154,6 +190,9 @@ fn main() {
     //   assert_eq!(segmento,[2,3])
 
     //ESTRUCTURA
+
+
+
 }
 // fn primera_palabra(cadena: &String) -> &str {
 //     let bytes = cadena.as_bytes();
