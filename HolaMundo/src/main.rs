@@ -6,31 +6,53 @@
 // }
 // struct  Color (i32, i32, i32);
 // struct Coordenada(i32, i32, i32);
-struct  Rectangulo{
-    ancho: i32,
-    alto: i32,
-}
+// struct  Rectangulo{
+//     ancho: i32,
+//     alto: i32,
+// }
 //esto que hace referencia a que afectar toda la estrctura
 // en este ejemplo se le esta agregando un metodo a la estructura
-impl Rectangulo {
-    fn area(&self) -> i32 {
-        self.ancho * self.alto
-    }
-    // fn puede_contener(&self, otro: &Rectangulo) -> bool {
-    //     self.ancho >= otro.ancho && self.alto >= otro.alto
-    // }
-    fn cuadrado(lado: i32) -> Rectangulo {
-        Rectangulo {
-            ancho: lado,
-            alto:lado,
-        }
-    }
+// impl Rectangulo {
+//     fn area(&self) -> i32 {
+//         self.ancho * self.alto
+//     }
+//     // fn puede_contener(&self, otro: &Rectangulo) -> bool {
+//     //     self.ancho >= otro.ancho && self.alto >= otro.alto
+//     // }
+//     fn cuadrado(lado: i32) -> Rectangulo {
+//         Rectangulo {
+//             ancho: lado,
+//             alto:lado,
+//         }
+//     }
+// }
+enum  tipoDirrecionIp {
+    V4(String), V6(String)
+    
 }
+struct direccionIp {
+    
+    tipo: tipoDirrecionIp,
+}
+fn ruta(tipoIp: tipoDirrecionIp){
 
-
+}
 fn main() {
-   let cuadrado1 = Rectangulo::cuadrado(10);
-   
+    // let cuadro = tipoDirrecionIp::V4;
+    // let seis = tipoDirrecionIp::V6;
+
+let loopback_v4 = direccionIp{
+    tipo: tipoDirrecionIp::V4(String::from("123.0.0.1")),
+    
+};
+let loopback_v4 = direccionIp{
+    tipo: tipoDirrecionIp::V6(String::from("123.0.0.1::1")),
+
+};
+    // ruta(cuadro);
+    // println!("Direccion: {}", loopback_v4.direccion);
+//    let cuadrado1 = Rectangulo::cuadrado(10);
+
 //  let rectangulo1 = Rectangulo {
 //      ancho: 10,
 //      alto: 20,
