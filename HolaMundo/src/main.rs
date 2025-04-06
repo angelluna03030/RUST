@@ -26,29 +26,62 @@
 //         }
 //     }
 // }
-enum  tipoDirrecionIp {
-    V4(String), V6(String)
+// enum  tipoDirrecionIp {
+//     V4(String), V6(String)
     
-}
-struct direccionIp {
+// }
+// struct direccionIp {
     
-    tipo: tipoDirrecionIp,
-}
-fn ruta(tipoIp: tipoDirrecionIp){
+//     tipo: tipoDirrecionIp,
+// }
+// fn ruta(tipoIp: tipoDirrecionIp){
 
-}
+// }
+// enum  Mensaje {
+//     Quitar,
+//     Mover{x:i32, y:i32},
+//     Escribir(String),
+//     CambiarColor(i32, i32, i32),
+    
+// }
+// struct  MoverMensaje {
+//     x: i32,
+//     y: i32,
+// }
+// struct  EscribirMensaje (
+//    String
+// );
+// struct  CambiarColorMensaje (
+//      i32, i32, i32
+// );
+// struct  QuitarMensaje {
+//     id: i32,
+// }
+
+// impl Mensaje {
+    
+
+// }
+// //un valor nulo a que no tiene valor
+// enum Option<T> {
+//     None,
+//     Some(T),
+// }
 fn main() {
+
+    // let x : i8 = 5;
+    // let y: Option<i8> = Some(10);
+
     // let cuadro = tipoDirrecionIp::V4;
     // let seis = tipoDirrecionIp::V6;
 
-let loopback_v4 = direccionIp{
-    tipo: tipoDirrecionIp::V4(String::from("123.0.0.1")),
+// let loopback_v4 = direccionIp{
+//     tipo: tipoDirrecionIp::V4(String::from("123.0.0.1")),
     
-};
-let loopback_v4 = direccionIp{
-    tipo: tipoDirrecionIp::V6(String::from("123.0.0.1::1")),
-
-};
+// };
+// let loopback_v4 = direccionIp{
+//     tipo: tipoDirrecionIp::V6(String::from("123.0.0.1::1")),
+// };
     // ruta(cuadro);
     // println!("Direccion: {}", loopback_v4.direccion);
 //    let cuadrado1 = Rectangulo::cuadrado(10);
