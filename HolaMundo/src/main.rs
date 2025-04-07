@@ -67,8 +67,97 @@
 //     None,
 //     Some(T),
 // }
-fn main() {
 
+// enum  Mes {
+//     Enero = 1,
+//     Febrero,
+//     Marzo,
+//     Abril,
+//     Mayo,
+//     Junio,
+//     Julio,
+//     Agosto,
+//     Septiembre,
+//     Octubre,
+//     Noviembre,
+//     Diciembre
+    
+// }
+// enum Tiempo {
+// Segundo, Minuto, Hora, Dia(Mes)
+    
+// }
+
+// fn valor_en_segunos( tiempo: Tiempo)-> i32{
+//     match tiempo {
+//         Tiempo::Segundo => {
+//             println!(" un segundo ");
+//             1
+//         },
+//         Tiempo::Minuto => 60,
+//         Tiempo::Hora => 3600,
+//         Tiempo::Dia(mes) => {
+          
+//             match mes {
+//                 Mes::Enero => {
+//                     println!("enero");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Febrero => {
+//                     println!("Febrero");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Marzo => {
+//                     println!("Marzo");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Abril => {
+//                     println!("Abril");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Mayo => {
+//                     println!("Mayo");
+//                     60 * 60 * 24
+//                 },                  
+//                 Mes::Junio => {
+//                     println!("Junio");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Julio => {
+//                     println!("Julio");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Agosto => {
+//                     println!("Agosto");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Septiembre => {
+//                     println!("Septiembre");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Octubre => {
+//                     println!("Octubre");
+//                     60 * 60 * 24
+//                 },
+//                 Mes::Noviembre => {
+//                     println!("Noviembre");
+//                     60 * 60 * 24
+//                 },
+
+//                 Mes::Diciembre => {
+//                     println!("Diciembre");
+//                     60 * 60 * 24
+//                 },
+//             }
+            
+//         },
+        
+//     }
+// }
+fn main() {
+//   let tiempo = Tiempo::Dia(Mes::Enero);
+//   let segundos = valor_en_segunos(tiempo);
+//   println!("segundos: {}", segundos);
     // let x : i8 = 5;
     // let y: Option<i8> = Some(10);
 
