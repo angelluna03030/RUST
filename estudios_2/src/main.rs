@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+// use std::collections::HashMap;
 
 //el Option sirve para tener un valor opcional y el el valor como tal
 /*
