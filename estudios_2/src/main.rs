@@ -39,14 +39,19 @@ pub enum Option<T> {
 
 // }
 fn main() {
+//   let nombre_campo = String::from("Nombre");
+// let aquipos = vec![
+//     String::from("Juan"), String::from("Pedro"), String::from("Maria")];
+//     let puntuaciones_iniciales  = vec![10, 20, 30];
+//     let mut puntuaciones : HashMap<String, i32> = 
+//     aquipos.into_iter().zip(puntuaciones_iniciales.into_iter()).collect();
 
-
-    let mut puntuacion = HashMap::new();
-    puntuacion.insert("Warior", 121);
-    puntuacion.insert("Lakers", 122);
-    puntuacion.insert("Celtics", 123);
-    puntuacion.insert("Bulls", 124);
-    
+    let mut puncuaciones = HashMap::new();
+    puncuaciones.insert(String::from("Warriors"), 121);
+    puncuaciones.insert(String::from("Lakers"), 123);
+    for (clave , valor ) in &puncuaciones {
+        println!("El equipo {} tiene una puntuacion de {}", clave, valor);
+    }
     //    let tiempo = Tiempo::Dia((Mes::Octubre));
     //    let mut contador = 0;
 
