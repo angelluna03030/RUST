@@ -39,6 +39,7 @@ pub enum Option<T> {
 
 // }
 fn main() {
+    panic!("eror");
 //   let nombre_campo = String::from("Nombre");
 // let aquipos = vec![
 //     String::from("Juan"), String::from("Pedro"), String::from("Maria")];
