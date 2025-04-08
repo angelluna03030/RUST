@@ -54,25 +54,25 @@ pub enum Option<T> {
 //    }
 // }
 
-use std::fs::File;
-use std::error::Error
-fn ultimo_caracter_dePrimerLinea(text: &str) -> Option<char> {
-    text.lines().next()?.chars().last()
+// use std::fs::File;
+// use std::error::Error
+// fn ultimo_caracter_dePrimerLinea(text: &str) -> Option<char> {
+//     text.lines().next()?.chars().last()
 
-}
-fn main() -> Result<(), Box<dyn Error>> {
+// }
+fn main() /*-> Result<(), Box<dyn Error>>*/ {
     //panic!("eror");
     //EL operoador ? sirve para manejar errores pero se utlizar cuando se esta devolviendo un Result 
     // y el ? lo que hace es devolver el error si no se puede abrir el archivo
-    let f = File::open("archivo.txt")?;
-    Ok((f));
+    // let f = File::open("archivo.txt")?;
+    // Ok(()):
     //let vector = vec![1, 2, 3, 4, 5];
     // let f = File::open("archivo.txt").expect("Error al abrir el archivo");
     // // let f = File::open("archivo.txt");
     
     // println!("{:?}", f);
 
-    let f = File::open("archivo.txt");
+    // let f = File::open("archivo.txt");
 
     // let f = match f {
     //     Ok(fichero) => fichero,
