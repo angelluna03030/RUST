@@ -46,6 +46,7 @@ fn main() {
     puntuacion.insert("Lakers", 122);
     puntuacion.insert("Celtics", 123);
     puntuacion.insert("Bulls", 124);
+    
     //    let tiempo = Tiempo::Dia((Mes::Octubre));
     //    let mut contador = 0;
 
