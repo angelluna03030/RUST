@@ -39,24 +39,65 @@ pub enum Option<T> {
 
 // }
 
+// use std::{fs::File, io::{self, Read}};
+// fn leer ()-> Result<String, io::Error> {
+//     let mut f = File::open("archivo.txt")?;
+//    let mut f = match File::open("archivo.txt") {
+//        Ok(fichero) => fichero,
+//        Err(error) => return Err(error),
+//    };
+//     let mut contenido = String::new();
+//    match f.read_to_string(&mut contenido) {
+//        Ok(_) => Ok(contenido),
+//        Err(error) => Err(error),
+       
+//    }
+// }
+
 use std::fs::File;
-fn main() {
+use std::error::Error
+fn ultimo_caracter_dePrimerLinea(text: &str) -> Option<char> {
+    text.lines().next()?.chars().last()
+
+}
+fn main() -> Result<(), Box<dyn Error>> {
     //panic!("eror");
-    let vector = vec![1, 2, 3, 4, 5];
+    //EL operoador ? sirve para manejar errores pero se utlizar cuando se esta devolviendo un Result 
+    // y el ? lo que hace es devolver el error si no se puede abrir el archivo
+    let f = File::open("archivo.txt")?;
+    Ok((f));
+    //let vector = vec![1, 2, 3, 4, 5];
+    // let f = File::open("archivo.txt").expect("Error al abrir el archivo");
+    // // let f = File::open("archivo.txt");
+    
+    // println!("{:?}", f);
+
     let f = File::open("archivo.txt");
 
-    let aux = vector[9];
-    enum Result<T, E> {
-        Ok(T),
-        Err(E),
+    // let f = match f {
+    //     Ok(fichero) => fichero,
+    //     Err(error) => match error.kind() {
+    //         ErrorKind::NotFound => {
+    //             println!("El archivo no existe");
+    //             match File::create("archivo.txt") {
+    //                 Ok(fichero) => fichero,
+    //                 Err(error) => panic!("Error al crear el archivo: {:?}", error),
+    //             }
+                
+                
+    //         }
+            
+    //         ErrorKind::PermissionDenied => {
+    //             println!("No tienes permisos para acceder al archivo");
+    //             panic!();
+    //         }
+    //         _ => {
+    //             panic!("Error inesperado: {:?}", error);
+    //         }
+            
+    //     }
+    //     };
     }
-    let f = match f {
-        Ok(fichero) => fichero,
-        Err(error) => {
-            println!("Error al abrir el archivo: {:?}", error);
-            return;
-        }
-    };
 //   let nombre_campo = String::from("Nombre");
 // let aquipos = vec![
 //     String::from("Juan"), String::from("Pedro"), String::from("Maria")];
@@ -155,4 +196,3 @@ fn main() {
     // // el "&" lo que hace es tomar referecia o presta ese valor 
     // let cadena2 = caena + &datos;
 
-}
