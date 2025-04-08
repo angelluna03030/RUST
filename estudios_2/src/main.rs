@@ -52,6 +52,7 @@ fn main() {
     for (clave , valor ) in &puncuaciones {
         println!("El equipo {} tiene una puntuacion de {}", clave, valor);
     }
+    
     //    let tiempo = Tiempo::Dia((Mes::Octubre));
     //    let mut contador = 0;
 
