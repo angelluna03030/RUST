@@ -46,13 +46,13 @@ fn main() {
 //     let mut puntuaciones : HashMap<String, i32> = 
 //     aquipos.into_iter().zip(puntuaciones_iniciales.into_iter()).collect();
 
-    let mut puncuaciones = HashMap::new();
-    puncuaciones.insert(String::from("Warriors"), 121);
-    puncuaciones.insert(String::from("Lakers"), 123);
-    for (clave , valor ) in &puncuaciones {
-        println!("El equipo {} tiene una puntuacion de {}", clave, valor);
-    }
-    println!("El equipo Warriors tiene una puntuacion de {}", puncuaciones["Warriors"]);
+    // let mut puncuaciones = HashMap::new();
+    // puncuaciones.insert(String::from("Warriors"), 121);
+    // puncuaciones.insert(String::from("Lakers"), 123);
+    // for (clave , valor ) in &puncuaciones {
+    //     println!("El equipo {} tiene una puntuacion de {}", clave, valor);
+    // }
+    // println!("El equipo Warriors tiene una puntuacion de {}", puncuaciones["Warriors"]);
     //    let tiempo = Tiempo::Dia((Mes::Octubre));
     //    let mut contador = 0;
 
