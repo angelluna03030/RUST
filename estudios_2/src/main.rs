@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 //el Option sirve para tener un valor opcional y el el valor como tal
 /*
 pub enum Option<T> {
@@ -37,6 +39,13 @@ pub enum Option<T> {
 
 // }
 fn main() {
+
+
+    let mut puntuacion = HashMap::new();
+    puntuacion.insert("Warior", 121);
+    puntuacion.insert("Lakers", 122);
+    puntuacion.insert("Celtics", 123);
+    puntuacion.insert("Bulls", 124);
     //    let tiempo = Tiempo::Dia((Mes::Octubre));
     //    let mut contador = 0;
 
@@ -71,48 +80,54 @@ fn main() {
 
     // VECTORES DE DATOS
     // solo sirven para almacenar datos del mismo tipo
-    let mut x: Vec<i32> = Vec::new();
-    x.push(1);
-    x.push(232);
-    x.push(323);
-    println!("{:?}", x[2]);
+    //     let mut x: Vec<i32> = Vec::new();
+    //     x.push(1);
+    //     x.push(232);
+    //     x.push(323);
+    //     println!("{:?}", x[2]);
 
-    x.pop(); // elimina el ultimo elemento del vector
-    println!("{:?}", x.len()); // imprime la longitud del vector
-    let v = vec![1, 2, 3, 4, 5, 3];
-    let tercer: &i32 = &v[2]; // se obtiene el tercer elemento del vector
-    println!("{:?}", tercer); // imprime el tercer elemento del vector
-    match v.get(2) {
-        Some(valor) => println!("El tercer elemento es: {}", valor),
-        None => println!("No hay tercer elemento"),
-    }
-    for i in &v {
-        println!("El elemento es: {}", i);
-    }
+    //     x.pop(); // elimina el ultimo elemento del vector
+    //     println!("{:?}", x.len()); // imprime la longitud del vector
+    //     let v = vec![1, 2, 3, 4, 5, 3];
+    //     let tercer: &i32 = &v[2]; // se obtiene el tercer elemento del vector
+    //     println!("{:?}", tercer); // imprime el tercer elemento del vector
+    //     match v.get(2) {
+    //         Some(valor) => println!("El tercer elemento es: {}", valor),
+    //         None => println!("No hay tercer elemento"),
+    //     }
+    //     for i in &v {
+    //         println!("El elemento es: {}", i);
+    //     }
 
+    //     //para almacenar datos de diferentes tipos se utiliza la enum
+    // enum CeldaHojadeCalculo{
+    //     Entero(i32),
+    //     Decimal(f32),
+    //     Texto(String),
+    //     Booleano(bool),
 
-    //para almacenar datos de diferentes tipos se utiliza la enum
-enum CeldaHojadeCalculo{
-    Entero(i32),
-    Decimal(f32),
-    Texto(String),
-    Booleano(bool),
+    // }
 
+    // let fila = vec![
+    //     CeldaHojadeCalculo::Entero(10),
+    //     CeldaHojadeCalculo::Decimal(3.14),
+    //     CeldaHojadeCalculo::Texto(String::from("Hola")),
+    //     CeldaHojadeCalculo::Booleano(true),
+    // ];
+    // for celda in fila {
+    //     match celda {
+    //         CeldaHojadeCalculo::Entero(valor) => println!("Entero: {}", valor),
+    //         CeldaHojadeCalculo::Decimal(valor) => println!("Decimal: {}", valor),
+    //         CeldaHojadeCalculo::Texto(texto) => println!("Texto: {}", texto),
+    //         CeldaHojadeCalculo::Booleano(valor) => println!("Booleano: {}", valor),
+    //     }
+    // };
 
-}
+    //CADENA STRING
+    // let datos = "Hola, soy un string";
 
-let fila = vec![
-    CeldaHojadeCalculo::Entero(10),
-    CeldaHojadeCalculo::Decimal(3.14),
-    CeldaHojadeCalculo::Texto(String::from("Hola")),
-    CeldaHojadeCalculo::Booleano(true),
-];
-for celda in fila {
-    match celda {
-        CeldaHojadeCalculo::Entero(valor) => println!("Entero: {}", valor),
-        CeldaHojadeCalculo::Decimal(valor) => println!("Decimal: {}", valor),
-        CeldaHojadeCalculo::Texto(texto) => println!("Texto: {}", texto),
-        CeldaHojadeCalculo::Booleano(valor) => println!("Booleano: {}", valor),
-    }
-};
+    // let caena = String::from("Hola, soy un string");
+    // // el "&" lo que hace es tomar referecia o presta ese valor 
+    // let cadena2 = caena + &datos;
+
 }

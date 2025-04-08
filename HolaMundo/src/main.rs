@@ -158,15 +158,15 @@ fn main() {
 //   let tiempo = Tiempo::Dia(Mes::Enero);
 //   let segundos = valor_en_segunos(tiempo);
 //   println!("segundos: {}", segundos);
-    // let x : i8 = 5;
-    // let y: Option<i8> = Some(10);
+//     let x : i8 = 5;
+//     let y: Option<i8> = Some(10);
 
-    // let cuadro = tipoDirrecionIp::V4;
-    // let seis = tipoDirrecionIp::V6;
+//     let cuadro = tipoDirrecionIp::V4;
+//     let seis = tipoDirrecionIp::V6;
 
 // let loopback_v4 = direccionIp{
 //     tipo: tipoDirrecionIp::V4(String::from("123.0.0.1")),
-    
+// }
 // };
 // let loopback_v4 = direccionIp{
 //     tipo: tipoDirrecionIp::V6(String::from("123.0.0.1::1")),
