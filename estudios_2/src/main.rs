@@ -38,8 +38,25 @@ pub enum Option<T> {
 //     Dia(Mes),
 
 // }
+
+use std::fs::File;
 fn main() {
-    panic!("eror");
+    //panic!("eror");
+    let vector = vec![1, 2, 3, 4, 5];
+    let f = File::open("archivo.txt");
+
+    let aux = vector[9];
+    enum Result<T, E> {
+        Ok(T),
+        Err(E),
+    }
+    let f = match f {
+        Ok(fichero) => fichero,
+        Err(error) => {
+            println!("Error al abrir el archivo: {:?}", error);
+            return;
+        }
+    };
 //   let nombre_campo = String::from("Nombre");
 // let aquipos = vec![
 //     String::from("Juan"), String::from("Pedro"), String::from("Maria")];
