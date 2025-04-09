@@ -27,13 +27,13 @@
 //     }
 //     mayor
 // }
-struct Punto<T> {
-    x: T,
-    y: T,   
-}
+// struct Punto<T> {
+//     x: T,
+//     y: T,   
+// }
 fn main() {
+//self hace referencia al datoa que le estamos pasando en si mismo 
 
-    
     //TTPOS DE DATOS GENERICOS
     // let entero = Punto{x: 1, y: 2};
     // let decimal = Punto{x: 1.0, y: 2.0};
@@ -47,20 +47,20 @@ fn main() {
     // let lista_de_caracteres = vec!['z', 'b', 'c', 'd', 'x'];
     // let resultado = mayor_char(&lista_de_caracteres);
     // println!("El mayor es: {}", resultado);
-    impl<T> Punto<T> {
-        fn X(&self) -> &T {
-           &self.x
-        }
+    // impl<T> Punto<T> {
+    //     fn X(&self) -> &T {
+    //        &self.x
+    //     }
         
-    }
-    enum Option<T> {
-        Some(T),
-        None,
-    }
-    enum Result<T,E>{
-        Ok(T),
-        Err(E),
-    }
+    // }
+    // enum Option<T> {
+    //     Some(T),
+    //     None,
+    // }
+    // enum Result<T,E>{
+    //     Ok(T),
+    //     Err(E),
+    // }
     // let lista = vec![1, 2, 3, 4, 5];
     // let resultado = mayor(&lista);
     // println!("El mayor es: {}", resultado);
