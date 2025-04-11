@@ -38,61 +38,61 @@
 // asi RUST entendera que un metodo que se ta utilizar en muchos casos pero diferentes struct
 
 
-pub  trait  Resumen {
-    fn resumir(&self) -> String;
-    // aqui le estoy diciendo que si no hay una implementacion que tenga funcion que 
-    // se llame resumir_contenido, entonces que use la implementacion por defecto
-    //asi nos aseguramos que ten tenga esas funcinon por defecto 
+// pub  trait  Resumen {
+//     fn resumir(&self) -> String;
+//     // aqui le estoy diciendo que si no hay una implementacion que tenga funcion que 
+//     // se llame resumir_contenido, entonces que use la implementacion por defecto
+//     //asi nos aseguramos que ten tenga esas funcinon por defecto 
     
-    fn resumir_contenido(&self) -> String {
-        String::from("Contenido por defecto")
-    }
-}
-pub struct Noticia {
-    pub titular: String,
-    pub autor: String,
-    pub contenido: String,
-    pub localizacion: String,
+//     fn resumir_contenido(&self) -> String {
+//         String::from("Contenido por defecto")
+//     }
+// }
+// pub struct Noticia {
+//     pub titular: String,
+//     pub autor: String,
+//     pub contenido: String,
+//     pub localizacion: String,
 
-}
+// }
 
-impl Resumen for Noticia {
-    fn resumir(&self) -> String {
-        format!("{} por {}", self.titular, self.autor)
-    }
+// impl Resumen for Noticia {
+//     fn resumir(&self) -> String {
+//         format!("{} por {}", self.titular, self.autor)
+//     }
     
-}
-pub struct Tweet {
-    pub usuario: String,
-    pub contenido: String,
-    pub retweets: bool,
-    pub respuesta: bool,
-}
+// }
+// pub struct Tweet {
+//     pub usuario: String,
+//     pub contenido: String,
+//     pub retweets: bool,
+//     pub respuesta: bool,
+// }
 
-impl Resumen for Tweet {
-    fn resumir(&self) -> String {
-        format!("{}: {}", self.usuario, self.contenido)
-    }
+// impl Resumen for Tweet {
+//     fn resumir(&self) -> String {
+//         format!("{}: {}", self.usuario, self.contenido)
+//     }
     
-}
+// }
 fn main() {
 
-    let tweet = Tweet {
-        usuario: String::from("usuario123"),
-        contenido: String::from("Este es un tweet"),
-        retweets: true,
-        respuesta: false,
-    };
-    println!("Resumen del tweet: {}", tweet.resumir());
-    let noticia = Noticia {
-        titular: String::from("Titular de la noticia"),
-        autor: String::from("Autor de la noticia"),
-        contenido: String::from("Contenido de la noticia"),
-        localizacion: String::from("Localización de la noticia"),
-    };
+    // let tweet = Tweet {
+    //     usuario: String::from("usuario123"),
+    //     contenido: String::from("Este es un tweet"),
+    //     retweets: true,
+    //     respuesta: false,
+    // };
+    // println!("Resumen del tweet: {}", tweet.resumir());
+    // let noticia = Noticia {
+    //     titular: String::from("Titular de la noticia"),
+    //     autor: String::from("Autor de la noticia"),
+    //     contenido: String::from("Contenido de la noticia"),
+    //     localizacion: String::from("Localización de la noticia"),
+    // };
 
-    println!("Resumen de la noticia: {}", noticia.resumir());
-    //self hace referencia al datoa que le estamos pasando en si mismo
+    // println!("Resumen de la noticia: {}", noticia.resumir());
+    // //self hace referencia al datoa que le estamos pasando en si mismo
 
     //TTPOS DE DATOS GENERICOS
     // let entero = Punto{x: 1, y: 2};
