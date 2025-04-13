@@ -55,15 +55,21 @@
 //     println!("{:?}", data);
 // }
 
+use std::env;
 
+fn main() {
+    let argumentos: Vec<String> = env::args().collect();
+    let paramietro1 = &argumentos[0];
+    let paramietro2 = &argumentos[1];
 
-// fn main(){
-
-// }
-#[cfg(test)]
-mod tests{
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+    println!("EL primer parametro es {}", paramietro1);
+    println!("EL segundo parametro es {}", paramietro2);
 }
+// }
+// #[cfg(test)]
+// mod test{
+//     #[test]
+//     fn it_works() {
+//         assert_eq!(2 + 2, 4);
+//     }
+// }
